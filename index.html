@@ -6,27 +6,26 @@
 body{
   background-color: #F0F7F4;
 }
+
 img{
-  
-  height: 50vw;
   border-radius: 50%;
   border-color: blanchedalmond;
   border-style: solid;
-  border-width: 5px;
     
 }
 
+#image{
+  height: 50vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 600px;
 
-.icon #redlipicon{
-  height: 70px;
-  border: none;
-  align-items: flex-end;
-  top: 40px;
-  left: 60px;
-  position: absolute;
 }
-  
-.img-div{
+
+#img-div{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,6 +36,32 @@ img{
   border-radius: 30%;
   
 }
+
+#img-caption{
+  justify-content: left;
+  margin-right: 50px;
+  font-size: 35px;
+  color: #F0F7F4;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.icon #redlipicon{
+  height: 70px;
+  border: none;
+  align-items: flex-end;
+  top: 40px;
+  left: 60px;
+  position: absolute;
+}
+  
+
 
 
 .title {
@@ -57,27 +82,29 @@ img{
   
 }
 
-#timeline h3{
+#tribute-info h3{
+  margin-top: 50px;
   font-family: Cormorant;
   font-size: 25px;
-  margin-left: 75PX;
- 
+  margin-left: 300px;
+  align-content: space-between;
 }
 
-#timeline p{
+#tribute-info p{
   padding: 10px;
-  margin-left: 100px;
+  margin-left: 300px;
   margin-top: 10px;
-  margin-right: 100px;
+  margin-right: 300px;
 }
 
 #tablecontents{
-  color:#BD897E;
-  font-size: 25px;
+  display: block;
+  color: black;
+  font-size: 35px;
   margin-left: 20px;
   padding: 15px;
   justify-content: center;
-  align-items: center;
+  align-content: space-between;
   
 
 }
@@ -86,23 +113,27 @@ img{
   text-decoration: none;
   text-emphasis: none;
   margin: 30px;
-  color: #BD897E;
+  color:darkgray
   font-weight:lighter;
+  align-content: space-between;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:100;
+  
  
 
 }
 
-.wikibutton .btn{
+.tribute-wiki .btn{
   display:block;
   width: 200px;
   border: 3px solid antiquewhite;
   padding: 15px;
   margin-left: 25vw;
   border-radius: 35%;
-  background-color:;
+ 
 }
 
-.wikibutton a{
+.tribute-wiki a{
   text-decoration: none;
   color: black;
 }
@@ -112,72 +143,78 @@ img{
 
 <html>
   
+  <div id="main"> 
+
+    <body>
+    <div class="title">
+      <h1 id="title">A Tribute To Marilyn Monroe</h1> <!--/*image caption*/-->
+    </div>
+
+    <div class="icon">
+      <img src="https://th.bing.com/th/id/R98a1d4a28e71676e6236084548a58358?rik=zAGPtnuRlhXncA&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f8%2fLips-PNG-Transparent-Image.png&ehk=PFQ%2bl1Edx46RBGhJbowYwIvwSxSIjbJc9D31vqHkxzM%3d&risl=&pid=ImgRaw" id="redlipicon")
+      <section class="hero">
+     </div>
+
+     <!--/*tribute-link*/-->
+    <div id="tablecontents">
+      <a href="#before-fame">Before Fame</a>
+      <a href="#Acting">Hollywood</a>
+      <a href="#Love">Love</a>
+      <a href="#End">The Start of the End</a>
+    </div>
+   
+    <div id= "img-div">
+      <img src="https://www.wallpaperaccess.com/full/4771563.jpg" id="image" class="center" alt="marilyn monroe in a sweater">
+      <figcaption id="img-caption">Norma Jean Baker</figcaption>
+    </div>
+   
+  </section>
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+</body>
+
+  <!--/*tribute-info*/-->
+ 
   
+  
+  <div id="tribute-info">
+    
+    <h3 id="before-fame">Before Fame</h3>
+    <p>Monroe was born Norma Jeane Mortenson at the Los Angeles County Hospital in Los Angeles, California, on June 1, 1926. In the summer of 1933, Norma Jean and her mom Gladys bought a small house in Hollywood 
+      A year later, Gladys had a mental breakdown and was diagnosed with paranoid schizophrenia. Young Marilyn would spend the next few years of her life as a ward of the state, until her first marriage at 16 to the boy next door, a Marine.
+    </p>
+    <h3 id="Acting">Hollywood</h3>
+    <p> Norma Jean's started her path to fame when she signed with Blue Book Model Agency in August 1945, becoming a pin-up girl. Then signed with Fox Studios. 
+      Divorced her husband, who was adamently against her career. Eventually Marilyn 
+    </p>
+    <h3 id="Love">Love</h3>
+     <p> 
+      1952 New York Yankees star Joe Dimaggio 
+     </p>
+
+     <h3 id="End">The Start of the End</h3>
+     <p>
+      As she became the new Hollywood It Girl, Marilyn learned that the industry was an unkind place for women. A frequent target of sexism, double standards, mental abuse, resulted in anxiety and chronic insomnia. 
+      She turned to drugs for cope. Barbiturates, amphetamines, and alcohol, which also exacerbated her problems on set. It started a destructive cycle in which any assertion of control Marilyn wanted over her career was considered 
+      "difficult behavior", she would use to cope, rinse, repeat. She would become severely addicted around 1956.
+     </p> 
+
+  </div>
+  
+  <div class="tribute-wiki">
+    <a href="ttps://en.wikipedia.org/wiki/Marilyn_Monroe", class= "btn", id="tribute-link" target="_blank">Click here for Marilyn's Wiki</a>
+  </div>
+  
+
+</div>
+
    
   
-  <body>
+
    
   
       
-      <div class="title">
-        <h1 id="title_t">A Tribute To Marilyn Monroe</h1> <!--/*image caption*/-->
-      </div>
+ 
 
-      <div class="icon">
-        <img src="https://th.bing.com/th/id/R98a1d4a28e71676e6236084548a58358?rik=zAGPtnuRlhXncA&riu=http%3a%2f%2fwww.pngmart.com%2ffiles%2f8%2fLips-PNG-Transparent-Image.png&ehk=PFQ%2bl1Edx46RBGhJbowYwIvwSxSIjbJc9D31vqHkxzM%3d&risl=&pid=ImgRaw" id="redlipicon")
-        <section class="hero">
-       </div>
-
-       <!--/*tribute-link*/-->
-      <div id="tablecontents">
-        <a href="#before-fame">Before Fame</a>
-        <a href="#Acting">Hollywood</a>
-        <a href="#Love">Love</a>
-        <a href="#End">The Start of the End</a>
-      </div>
-     
-      <div class= "img-div">
-        <img src="https://www.wallpaperaccess.com/full/4771563.jpg" alt="marilyn monroe in a sweater">
-        
-      </div>
-     
-    </section>
-
-  </body>
-  <main>
-    <!--/*tribute-info*/-->
-   
-    
-    
-    <div id="timeline">
-      
-      <h3 id="before-fame">Before Fame</h3>
-      <p>Monroe was born Norma Jeane Mortenson at the Los Angeles County Hospital in Los Angeles, California, on June 1, 1926. In the summer of 1933, Norma Jean and her mom Gladys bought a small house in Hollywood 
-        A year later, Gladys had a mental breakdown and was diagnosed with paranoid schizophrenia. Young Marilyn would spend the next few years of her life as a ward of the state, until her first marriage at 16 to the boy next door, a Marine.
-      </p>
-      <h3 id="Acting">Hollywood</h3>
-      <p> Norma Jean's started her path to fame when she signed with Blue Book Model Agency in August 1945, becoming a pin-up girl. Then signed with Fox Studios. 
-        Divorced her husband, who was adamently against her career. Eventually Marilyn 
-      </p>
-      <h3 id="Love">Love</h3>
-       <p> 
-        1952 New York Yankees star Joe Dimaggio 
-       </p>
   
-       <h3 id="End">The Start of the End</h3>
-       <p>
-        As she became the new Hollywood It Girl, Marilyn learned that the industry was an unkind place for women. A frequent target of sexism, double standards, mental abuse, resulted in anxiety and chronic insomnia. 
-        She turned to drugs for cope. Barbiturates, amphetamines, and alcohol, which also exacerbated her problems on set. It started a destructive cycle in which any assertion of control Marilyn wanted over her career was considered 
-        "difficult behavior", she would use to cope, rinse, repeat. She would become severely addicted around 1956.
-       </p> 
-
-    </div>
-    
-    <div class="wikibutton">
-      <a href="ttps://en.wikipedia.org/wiki/Marilyn_Monroe", class= "btn", target="_blank">Click here for Marilyn's Wiki</a>
-    </div>
-    
-
-  </main>
 
 </html>
